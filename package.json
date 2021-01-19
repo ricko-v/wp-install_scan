@@ -1,0 +1,25 @@
+{
+  "name": "wp-install",
+  "version": "1.0.0",
+  "description": "wp-install scanner",
+  "main": "wp-install.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ricko-v"
+  },
+  "keywords": [
+    "wp-install",
+    "scanner"
+  ],
+  "author": "ricko v",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "fs": "0.0.1-security",
+    "readline": "^1.3.0",
+    "request": "^2.88.2"
+  }
+}
