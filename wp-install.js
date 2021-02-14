@@ -19,9 +19,10 @@ p.question("[+] Masukan path list : ", (path) => {
      let str = body +"";
      let cek = str.search(`Installation</title>`);
      let ck = str.search("Installed");
+     let ok = str.search(`<form id="setup" method="post" action="?step=1"><label class='screen-reader-text' for='language'>Select a default language</label>`);
      let la = str.search("Déjà installé");
 
-     if(cek !== -1 && ck == -1 && la == -1){
+     if(cek !== -1 && ck == -1 && la == -1 && ok !== -1){
       console.log("["+i+"/"+k+"] "+n+" ==> "+"vuln!!".green);
       fs.appendFile("install.txt",n+"/wp-admin/install.php\n", (er) => {
        if(er) throw er;
